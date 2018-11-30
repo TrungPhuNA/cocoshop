@@ -1,0 +1,42 @@
+# we use Haravan as our ecommerce platform
+
+User-agent: *
+Disallow: /admin
+Disallow: /cart
+Disallow: /carts
+Disallow: /orders
+Disallow: /checkout
+Disallow: /checkouts
+Disallow: /account
+Disallow: /collections/*+*
+Disallow: /collections/*%2B*
+Disallow: /collections/*%2b*
+Disallow: /blogs/*+*
+Disallow: /blogs/*%2B*
+Disallow: /blogs/*%2b*
+Disallow: /*facebook_store_view*
+Disallow: /*5giay_store_view*
+Disallow: /*webtretho_store_view*
+Disallow: /discount/*
+Disallow: /apple-app-site-association
+Sitemap: http://cocoshop.vn/sitemap.xml
+
+# Google adsbot ignores robots.txt unless specifically named!
+User-agent: adsbot-google
+Disallow: /checkout
+Disallow: /checkouts
+Disallow: /carts
+Disallow: /orders
+Disallow: /discount/*
+Disallow: /*facebook_store_view*
+Disallow: /*5giay_store_view*
+Disallow: /*webtretho_store_view*
+
+User-agent: Nutch
+Disallow: /
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: Pinterest
+Crawl-delay: 1
